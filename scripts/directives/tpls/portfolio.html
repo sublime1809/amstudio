@@ -1,0 +1,11 @@
+<menu>
+    <div class="portfolio_menu" ng-repeat="item in menuItems" ng-mouseover="setHoverIndex($index)" ng-mouseout="clearHoverIndex()"
+         style="display: inline-block; position:relative; left: 0; top: 0; height: {{menuHeight}}px; width: {{menuHeight}}px; overflow: hidden; ">
+        <img ng-src="{{item.src}}" style="position: relative; top: 0; left: 0; margin: 0 auto;" />
+        <div ng-show="hoverIndex == $index" class="overlay" style="height: {{menuHeight}}px; width: {{menuHeight}}px; position: absolute; left: 0; top: 0;">
+            <div style="opacity: .5; font-size: 20px; height: 100%; width: 100%; background-color:{{overlayColor}}"></div>
+            <div class="text" style="position: absolute; color: #FFFFFF; font-size: {{menuHeight/8}}px;">{{item.title}}</div>
+        </div>
+        <img ng-src="{{circle}}" style="position: absolute; top: 0; left: 0; height: 100%;" />
+    </div>
+</menu>

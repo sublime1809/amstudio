@@ -1,0 +1,33 @@
+body {
+    background-color: #000000;
+    color: #808285;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+// Content
+#content {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+}
+div#content * {
+    margin: 0 auto;
+}
+
+// Navigation
+navigation {
+    float: right;
+}
+navigation ul {
+    display: inline-block;
+    float: right;
+}
+navigation ul li {
+    display: inline-block;
+    width: 100px;
+}
+
+// Portfolio
+portfolio * {
+    display: inline;
+}
